@@ -20,6 +20,7 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }} # <--- ДОДАТИ ЦЕЙ РЯДОК
           application_name: cmtr-v7hgdxhd-app
           environment_name: cmtr-v7hgdxhd-env
           version_label: "ver-${{ github.sha }}"
